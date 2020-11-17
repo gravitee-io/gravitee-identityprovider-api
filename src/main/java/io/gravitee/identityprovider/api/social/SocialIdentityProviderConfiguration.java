@@ -45,8 +45,4 @@ public interface SocialIdentityProviderConfiguration extends IdentityProviderCon
 
     Integer getMaxPoolSize();
 
-    String getButtonColor();
-
-    String getButtonLabel();
-
 }

@@ -34,8 +34,6 @@ public interface SocialAuthenticationProvider extends AuthenticationProvider {
 
     String getRedirectUrl();
 
-    Single<SocialAuthenticationProviderConfiguration> getIntegrationConfiguration();
-
     default Lifecycle.State lifecycleState() {
         return Lifecycle.State.INITIALIZED;
     }
