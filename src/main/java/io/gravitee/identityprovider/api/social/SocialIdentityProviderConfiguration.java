@@ -41,8 +41,4 @@ public interface SocialIdentityProviderConfiguration extends IdentityProviderCon
 
     String getResponseType();
 
-    Integer getConnectTimeout();
-
-    Integer getMaxPoolSize();
-
 }
