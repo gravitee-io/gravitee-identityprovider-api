@@ -28,6 +28,8 @@ import io.reactivex.Single;
  */
 public interface SocialAuthenticationProvider extends AuthenticationProvider {
 
+    boolean validateConfiguration();
+
     Single<String> signInUrl();
 
     Maybe<User> loadUserByUsername(Authentication authentication);
