@@ -13,32 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.gravitee.identityprovider.api.social;
-
-import io.gravitee.identityprovider.api.IdentityProviderConfiguration;
-import java.util.Set;
+package io.gravitee.identityprovider.api.oauth2;
 
 /**
- * @author Lorie PISICCHIO (lorie.pisicchio at graviteesource.com)
+ * OAuth 2.0 Response Types
+ *
+ * See <a href="https://tools.ietf.org/html/rfc6749">The OAuth 2.0 Authorization Framework</a>
+ *
+ * @author Titouan COMPIEGNE (titouan.compiegne at graviteesource.com)
  * @author GraviteeSource Team
  */
-public interface SocialIdentityProviderConfiguration extends IdentityProviderConfiguration {
-    String getClientId();
+public interface ResponseType {
 
-    String getClientSecret();
+    /**
+     * "code" for requesting an authorization code
+     */
+    String CODE = "code";
 
-    String getRedirectUri();
-
-    Set<String> getScopes();
-
-    String getUserAuthorizationUri();
-
-    String getAccessTokenUri();
-
-    String getUserProfileUri();
-
-    String getCodeParameter();
-
-    String getResponseType();
-
+    /**
+     * "token" for requesting an access token (implicit grant)
+     */
+    String TOKEN = "token";
 }

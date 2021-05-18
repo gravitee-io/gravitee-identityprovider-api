@@ -23,6 +23,7 @@
     <properties>
         <gravitee-gateway-api.version>1.21.1</gravitee-gateway-api.version>
         <gravitee-common.version>1.18.0</gravitee-common.version>
+        <nimbus.version>9.0.1</nimbus.version>
     </properties>
 
     <parent>
@@ -44,6 +45,11 @@
                 <artifactId>gravitee-gateway-api</artifactId>
                 <version>${gravitee-gateway-api.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.nimbusds</groupId>
+                <artifactId>nimbus-jose-jwt</artifactId>
+                <version>${nimbus.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -60,6 +66,12 @@
             <groupId>io.reactivex.rxjava2</groupId>
             <artifactId>rxjava</artifactId>
             <scope>provided</scope>
+        </dependency>
+
+        <!-- Nimbus -->
+        <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
         </dependency>
     </dependencies>
 </project>

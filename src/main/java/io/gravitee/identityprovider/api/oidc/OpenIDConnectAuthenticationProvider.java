@@ -13,19 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.gravitee.identityprovider.api;
+package io.gravitee.identityprovider.api.oidc;
 
-/**
- * @author Lorie Pisicchio (lorie.pisicchio at graviteesource.com)
- * @author GraviteeSource Team
- */
-public interface IdentityProviderConfiguration {
+import io.gravitee.identityprovider.api.oauth2.OAuth2AuthenticationProvider;
 
-    default boolean userProvider() {
-        return false;
-    }
-
-    default boolean validate() {
-        return true;
-    }
+public interface OpenIDConnectAuthenticationProvider<T extends OpenIDConnectIdentityProviderConfiguration> extends OAuth2AuthenticationProvider<T> {
 }

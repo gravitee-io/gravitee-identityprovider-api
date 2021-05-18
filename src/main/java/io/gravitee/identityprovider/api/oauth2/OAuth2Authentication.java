@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.gravitee.identityprovider.api.social;
+package io.gravitee.identityprovider.api.oauth2;
 
 import io.gravitee.identityprovider.api.Authentication;
 import io.gravitee.identityprovider.api.AuthenticationContext;
 
-public class SocialAuthentication implements Authentication<String, String> {
+public class OAuth2Authentication implements Authentication<String, String> {
     private final String principal;
     private final String credentials;
     private final AuthenticationContext authenticationContext;
 
-    public SocialAuthentication(String principal, String credentials, AuthenticationContext authenticationContext) {
+    public OAuth2Authentication(String principal, String credentials, AuthenticationContext authenticationContext) {
         this.principal = principal;
         this.credentials = credentials;
         this.authenticationContext = authenticationContext;
