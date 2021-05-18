@@ -13,10 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.gravitee.identityprovider.api.social;
+package io.gravitee.identityprovider.api.oauth2;
 
 import io.gravitee.common.component.Lifecycle;
-import io.gravitee.identityprovider.api.Authentication;
 import io.gravitee.identityprovider.api.AuthenticationProvider;
 import io.gravitee.identityprovider.api.User;
 import io.reactivex.Maybe;
@@ -26,13 +25,18 @@ import io.reactivex.Single;
  * @author Lorie PISICCHIO (lorie.pisicchio at graviteesource.com)
  * @author GraviteeSource Team
  */
-public interface SocialAuthenticationProvider extends AuthenticationProvider {
+public interface OAuth2AuthenticationProvider<T extends OAuth2IdentityProviderConfiguration> extends AuthenticationProvider<String, String> {
 
-    boolean validateConfiguration();
+    T getConfiguration();
+
+    @Deprecated
+    default boolean validateConfiguration() {
+        return getConfiguration().validate();
+    }
 
     Single<String> signInUrl();
 
-    Maybe<User> loadUserByUsername(Authentication authentication);
+    Maybe<User> loadUserByUsername(OAuth2Authentication authentication);
 
     String getRedirectUrl();
 

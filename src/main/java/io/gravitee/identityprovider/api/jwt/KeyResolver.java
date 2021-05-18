@@ -13,19 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.gravitee.identityprovider.api;
+package io.gravitee.identityprovider.api.jwt;
 
-/**
- * @author Lorie Pisicchio (lorie.pisicchio at graviteesource.com)
- * @author GraviteeSource Team
- */
-public interface IdentityProviderConfiguration {
 
-    default boolean userProvider() {
-        return false;
-    }
+public enum KeyResolver {
 
-    default boolean validate() {
-        return true;
-    }
+    GIVEN_KEY,
+    JWKS_URL
 }
