@@ -43,8 +43,16 @@ public interface OAuth2IdentityProviderConfiguration extends IdentityProviderCon
 
     @Override
     default boolean validate() {
-        String clientId = getClientId().trim();
-        String clientSecret = getClientSecret().trim();
+        String clientId = getClientId();
+        if (clientId == null) {
+            return false;
+        }
+
+        String clientSecret = getClientSecret();
+        if (clientSecret == null) {
+            return false;
+        }
+
         return !clientId.isEmpty() && !clientSecret.isEmpty();
     }
 }
