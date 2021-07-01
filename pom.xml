@@ -21,7 +21,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <properties>
-        <gravitee-gateway-api.version>1.21.1</gravitee-gateway-api.version>
+        <gravitee-gateway-api.version>1.21.2</gravitee-gateway-api.version>
         <gravitee-common.version>1.18.0</gravitee-common.version>
         <nimbus.version>9.0.1</nimbus.version>
 
@@ -37,7 +37,7 @@
 
     <groupId>io.gravitee.identityprovider</groupId>
     <artifactId>gravitee-identityprovider-api</artifactId>
-    <version>1.2.0-SNAPSHOT</version>
+    <version>1.2.0</version>
 
     <name>Gravitee.io - Identity Provider - API</name>
 
