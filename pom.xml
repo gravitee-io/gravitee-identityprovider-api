@@ -37,7 +37,7 @@
 
     <groupId>io.gravitee.identityprovider</groupId>
     <artifactId>gravitee-identityprovider-api</artifactId>
-    <version>1.3.0-SNAPSHOT</version>
+    <version>1.3.0</version>
 
     <name>Gravitee.io - Identity Provider - API</name>
 
