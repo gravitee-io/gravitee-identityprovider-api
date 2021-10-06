@@ -25,7 +25,7 @@
         <gravitee-common.version>1.18.0</gravitee-common.version>
         <nimbus.version>9.0.1</nimbus.version>
 
-        <junit-jupiter.version>5.5.2</junit-jupiter.version>
+        <junit-jupiter.version>5.8.0</junit-jupiter.version>
         <assertj.version>3.18.1</assertj.version>
     </properties>
 
