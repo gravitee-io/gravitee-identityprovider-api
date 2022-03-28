@@ -19,6 +19,7 @@ import io.gravitee.identityprovider.api.Authentication;
 import io.gravitee.identityprovider.api.AuthenticationContext;
 
 public class OAuth2Authentication implements Authentication<String, String> {
+
     private final String principal;
     private final String credentials;
     private final AuthenticationContext authenticationContext;

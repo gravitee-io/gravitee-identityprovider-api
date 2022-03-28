@@ -15,7 +15,6 @@
  */
 package io.gravitee.identityprovider.api;
 
-
 import io.gravitee.common.service.AbstractService;
 import java.util.HashMap;
 import java.util.Map;
@@ -29,12 +28,10 @@ public class DefaultIdentityProviderManager extends AbstractService<IdentityProv
     private final Map<String, IdentityProvider> identityProviders = new HashMap<>();
 
     public IdentityProvider get(String id) {
-
         return identityProviders.get(id);
     }
 
     public void put(String id, IdentityProvider identityProvider) {
-
         identityProviders.put(id, identityProvider);
     }
 

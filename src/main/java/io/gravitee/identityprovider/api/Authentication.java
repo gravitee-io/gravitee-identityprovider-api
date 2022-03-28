@@ -27,7 +27,6 @@ package io.gravitee.identityprovider.api;
  * @see PasswordLessAuthentication
  */
 public interface Authentication<T, U> {
-
     /**
      * The identity of the principal being authenticated. In the case of an authentication
      * request with username and password, this would be the username. Callers are

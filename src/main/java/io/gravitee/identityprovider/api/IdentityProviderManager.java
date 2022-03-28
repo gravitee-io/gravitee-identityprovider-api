@@ -28,7 +28,6 @@ import java.util.Map;
  * @see DefaultIdentityProviderManager
  */
 public interface IdentityProviderManager extends Service<IdentityProviderManager> {
-
     /**
      * Get the {@link IdentityProvider} corresponding to the specified <code>source</code>
      *
@@ -54,7 +53,6 @@ public interface IdentityProviderManager extends Service<IdentityProviderManager
     Map<String, IdentityProvider> getAll();
 
     default AuthenticationProvider<?, ?> getAuthenticationProvider(String source) {
-
         IdentityProvider identityProvider = get(source);
 
         if (identityProvider != null) {
@@ -65,7 +63,6 @@ public interface IdentityProviderManager extends Service<IdentityProviderManager
     }
 
     default UserManager getUserManager(String source) {
-
         IdentityProvider identityProvider = get(source);
 
         if (identityProvider != null) {

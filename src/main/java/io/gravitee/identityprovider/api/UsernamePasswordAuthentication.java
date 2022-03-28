@@ -30,7 +30,7 @@ public class UsernamePasswordAuthentication implements Authentication<String, St
     private AuthenticationContext authenticationContext;
 
     public UsernamePasswordAuthentication(String username, String password) {
-       this(username, password, null);
+        this(username, password, null);
     }
 
     public UsernamePasswordAuthentication(String username, String password, AuthenticationContext authenticationContext) {
@@ -59,9 +59,7 @@ public class UsernamePasswordAuthentication implements Authentication<String, St
 
     @Override
     public String toString() {
-        return "UsernamePasswordAuthentication{" +
-                "username='" + username + '\'' +
-                '}';
+        return "UsernamePasswordAuthentication{" + "username='" + username + '\'' + '}';
     }
 
     @Override
@@ -69,8 +67,7 @@ public class UsernamePasswordAuthentication implements Authentication<String, St
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UsernamePasswordAuthentication that = (UsernamePasswordAuthentication) o;
-        return Objects.equals(username, that.username) &&
-                Objects.equals(password, that.password);
+        return Objects.equals(username, that.username) && Objects.equals(password, that.password);
     }
 
     @Override

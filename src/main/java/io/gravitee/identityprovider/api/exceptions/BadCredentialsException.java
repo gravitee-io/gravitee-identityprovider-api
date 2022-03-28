@@ -21,8 +21,7 @@ package io.gravitee.identityprovider.api.exceptions;
  */
 public class BadCredentialsException extends AuthenticationException {
 
-    public BadCredentialsException() {
-    }
+    public BadCredentialsException() {}
 
     public BadCredentialsException(String msg) {
         super(msg);

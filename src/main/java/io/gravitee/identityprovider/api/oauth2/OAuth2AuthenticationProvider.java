@@ -25,8 +25,8 @@ import io.reactivex.Single;
  * @author Lorie PISICCHIO (lorie.pisicchio at graviteesource.com)
  * @author GraviteeSource Team
  */
-public interface OAuth2AuthenticationProvider<T extends OAuth2IdentityProviderConfiguration> extends AuthenticationProvider<String, String> {
-
+public interface OAuth2AuthenticationProvider<T extends OAuth2IdentityProviderConfiguration>
+    extends AuthenticationProvider<String, String> {
     T getConfiguration();
 
     @Deprecated
@@ -43,5 +43,4 @@ public interface OAuth2AuthenticationProvider<T extends OAuth2IdentityProviderCo
     default Lifecycle.State lifecycleState() {
         return Lifecycle.State.INITIALIZED;
     }
-
 }

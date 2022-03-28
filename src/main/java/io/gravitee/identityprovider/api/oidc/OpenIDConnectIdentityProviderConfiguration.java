@@ -15,9 +15,8 @@
  */
 package io.gravitee.identityprovider.api.oidc;
 
-
-import io.gravitee.identityprovider.api.jwt.SignatureAlgorithm;
 import io.gravitee.identityprovider.api.jwt.KeyResolver;
+import io.gravitee.identityprovider.api.jwt.SignatureAlgorithm;
 import io.gravitee.identityprovider.api.oauth2.OAuth2IdentityProviderConfiguration;
 
 public interface OpenIDConnectIdentityProviderConfiguration extends OAuth2IdentityProviderConfiguration {
