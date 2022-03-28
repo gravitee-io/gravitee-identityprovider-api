@@ -20,14 +20,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <properties>
-        <gravitee-gateway-api.version>1.31.0</gravitee-gateway-api.version>
-        <gravitee-common.version>1.18.0</gravitee-common.version>
-        <nimbus.version>9.19</nimbus.version>
-
-        <junit-jupiter.version>5.5.2</junit-jupiter.version>
-        <assertj.version>3.18.1</assertj.version>
-    </properties>
 
     <parent>
         <groupId>io.gravitee</groupId>
@@ -37,9 +29,18 @@
 
     <groupId>io.gravitee.identityprovider</groupId>
     <artifactId>gravitee-identityprovider-api</artifactId>
-    <version>1.4.0-SNAPSHOT</version>
+    <version>1.3.0</version>
 
     <name>Gravitee.io - Identity Provider - API</name>
+
+    <properties>
+        <gravitee-gateway-api.version>1.31.0</gravitee-gateway-api.version>
+        <gravitee-common.version>1.18.0</gravitee-common.version>
+        <nimbus.version>9.19</nimbus.version>
+
+        <junit-jupiter.version>5.5.2</junit-jupiter.version>
+        <assertj.version>3.18.1</assertj.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
