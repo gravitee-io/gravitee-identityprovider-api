@@ -19,7 +19,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public interface StandardClaims {
-
     /**
      * Subject - Identifier for the End-User at the Issuer.
      */
@@ -121,8 +120,27 @@ public interface StandardClaims {
     String UPDATED_AT = "updated_at";
 
     static List<String> claims() {
-        return Arrays.asList(SUB, NAME, GIVEN_NAME, FAMILY_NAME, MIDDLE_NAME, NICKNAME,
-                PREFERRED_USERNAME, PROFILE, PICTURE, WEBSITE, EMAIL, EMAIL_VERIFIED,
-                GENDER, BIRTHDATE, ZONEINFO, LOCALE, PHONE_NUMBER, PHONE_NUMBER_VERIFIED, ADDRESS, UPDATED_AT);
+        return Arrays.asList(
+            SUB,
+            NAME,
+            GIVEN_NAME,
+            FAMILY_NAME,
+            MIDDLE_NAME,
+            NICKNAME,
+            PREFERRED_USERNAME,
+            PROFILE,
+            PICTURE,
+            WEBSITE,
+            EMAIL,
+            EMAIL_VERIFIED,
+            GENDER,
+            BIRTHDATE,
+            ZONEINFO,
+            LOCALE,
+            PHONE_NUMBER,
+            PHONE_NUMBER_VERIFIED,
+            ADDRESS,
+            UPDATED_AT
+        );
     }
 }

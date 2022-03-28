@@ -24,7 +24,6 @@ import org.springframework.lang.Nullable;
  * @author GraviteeSource Team
  */
 public interface UserManager {
-
     /**
      * Get the source identifier of this user manager.
      * Gravitee components typically use "gravitee" when they use their own user internal repository.

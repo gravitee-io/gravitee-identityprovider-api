@@ -55,9 +55,7 @@ public class PasswordLessAuthentication implements Authentication<String, Void> 
 
     @Override
     public String toString() {
-        return "PasswordLessAuthentication{" +
-                "username='" + username + '\'' +
-                '}';
+        return "PasswordLessAuthentication{" + "username='" + username + '\'' + '}';
     }
 
     @Override

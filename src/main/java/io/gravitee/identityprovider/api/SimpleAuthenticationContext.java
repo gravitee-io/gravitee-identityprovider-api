@@ -24,30 +24,29 @@ import java.util.Map;
  */
 public class SimpleAuthenticationContext implements AuthenticationContext {
 
-  private final Map<String, Object> attributes = new HashMap<>();
+    private final Map<String, Object> attributes = new HashMap<>();
 
-  public SimpleAuthenticationContext() {
-  }
+    public SimpleAuthenticationContext() {}
 
-  @Override
-  public AuthenticationContext set(String name, Object value) {
-    attributes.put(name, value);
-    return this;
-  }
+    @Override
+    public AuthenticationContext set(String name, Object value) {
+        attributes.put(name, value);
+        return this;
+    }
 
-  @Override
-  public AuthenticationContext remove(String name) {
-    attributes.remove(name);
-    return this;
-  }
+    @Override
+    public AuthenticationContext remove(String name) {
+        attributes.remove(name);
+        return this;
+    }
 
-  @Override
-  public Object get(String name) {
-    return attributes.get(name);
-  }
+    @Override
+    public Object get(String name) {
+        return attributes.get(name);
+    }
 
-  @Override
-  public Map<String, Object> attributes() {
-    return attributes;
-  }
+    @Override
+    public Map<String, Object> attributes() {
+        return attributes;
+    }
 }

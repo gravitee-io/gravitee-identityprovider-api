@@ -23,7 +23,6 @@ import io.reactivex.Maybe;
  * @author GraviteeSource Team
  */
 public interface AuthenticationProvider<T, U> extends Service<AuthenticationProvider<T, U>> {
-
     /**
      * Get the source identifier of this authentication provider.
      * Gravitee components typically use "gravitee" when they use their own authentication provider.

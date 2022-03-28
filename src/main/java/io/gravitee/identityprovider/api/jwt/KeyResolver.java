@@ -15,9 +15,7 @@
  */
 package io.gravitee.identityprovider.api.jwt;
 
-
 public enum KeyResolver {
-
     GIVEN_KEY,
-    JWKS_URL
+    JWKS_URL,
 }

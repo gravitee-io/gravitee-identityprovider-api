@@ -22,7 +22,6 @@ import io.gravitee.common.service.Service;
  * @author GraviteeSource Team
  */
 public interface IdentityProvider extends Service<IdentityProvider> {
-
     /**
      * Get the source identifier of this identity provider.
      * Gravitee components typically use "gravitee" when they use their own identity provider.
@@ -59,5 +58,4 @@ public interface IdentityProvider extends Service<IdentityProvider> {
         // Cockpit doesn't need a UserManager as it manages users by itself.
         return null;
     }
-
 }

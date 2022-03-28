@@ -15,31 +15,31 @@
  */
 package io.gravitee.identityprovider.api.oauth2;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.Set;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import java.util.Set;
-
-import static org.assertj.core.api.Assertions.assertThat;
-
 class OAuth2IdentityProviderConfigurationTest {
 
     @Nested
     class Validate {
-        @ParameterizedTest(name= "[{index}] clientId=\"{0}\" clientSecret=\"{1}\"")
+
+        @ParameterizedTest(name = "[{index}] clientId=\"{0}\" clientSecret=\"{1}\"")
         @DisplayName("returns false when empty")
-        @CsvSource({"clientId,''", "'',clientSecret", "'',''"})
+        @CsvSource({ "clientId,''", "'',clientSecret", "'',''" })
         void validate_empty(String clientId, String clientSecret) {
             boolean isValid = new FakeConfiguration(clientId, clientSecret).validate();
             assertThat(isValid).isFalse();
         }
 
-        @ParameterizedTest(name= "[{index}] clientId=\"{0}\" clientSecret=\"{1}\"")
+        @ParameterizedTest(name = "[{index}] clientId=\"{0}\" clientSecret=\"{1}\"")
         @DisplayName("returns false when null")
-        @CsvSource({"clientId,", ",clientSecret", ","})
+        @CsvSource({ "clientId,", ",clientSecret", "," })
         void validate_null(String clientId, String clientSecret) {
             boolean isValid = new FakeConfiguration(clientId, clientSecret).validate();
             assertThat(isValid).isFalse();
@@ -53,8 +53,8 @@ class OAuth2IdentityProviderConfigurationTest {
         }
     }
 
-
     class FakeConfiguration implements OAuth2IdentityProviderConfiguration {
+
         private final String clientId;
         private final String clientSecret;
         private String userAuthorizationUri;

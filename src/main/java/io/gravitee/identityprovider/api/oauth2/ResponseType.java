@@ -24,7 +24,6 @@ package io.gravitee.identityprovider.api.oauth2;
  * @author GraviteeSource Team
  */
 public interface ResponseType {
-
     /**
      * "code" for requesting an authorization code
      */

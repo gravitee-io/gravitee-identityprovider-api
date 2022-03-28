@@ -22,7 +22,6 @@ import java.util.Map;
  * @author GraviteeSource Team
  */
 public interface AuthenticationContext {
-
     /**
      * Stores an attribute in this context.
      *

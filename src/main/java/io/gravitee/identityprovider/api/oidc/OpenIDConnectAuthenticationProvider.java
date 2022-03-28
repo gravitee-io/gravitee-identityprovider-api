@@ -17,5 +17,5 @@ package io.gravitee.identityprovider.api.oidc;
 
 import io.gravitee.identityprovider.api.oauth2.OAuth2AuthenticationProvider;
 
-public interface OpenIDConnectAuthenticationProvider<T extends OpenIDConnectIdentityProviderConfiguration> extends OAuth2AuthenticationProvider<T> {
-}
+public interface OpenIDConnectAuthenticationProvider<T extends OpenIDConnectIdentityProviderConfiguration>
+    extends OAuth2AuthenticationProvider<T> {}

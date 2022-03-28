@@ -28,7 +28,6 @@ import java.util.Map;
  * @see DefaultUser
  */
 public interface User extends Serializable {
-
     /**
      * Returns the technical id used of the user
      *
@@ -75,7 +74,7 @@ public interface User extends Serializable {
      *
      * @return the user roles
      */
-    default List<String> getRoles(){
+    default List<String> getRoles() {
         return Collections.emptyList();
     }
 
