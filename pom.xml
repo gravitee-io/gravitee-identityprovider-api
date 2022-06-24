@@ -34,7 +34,7 @@
     <name>Gravitee.io - Identity Provider - API</name>
 
     <properties>
-        <gravitee-gateway-api.version>1.31.0</gravitee-gateway-api.version>
+        <gravitee-gateway-api.version>1.35.0</gravitee-gateway-api.version>
         <gravitee-common.version>1.18.0</gravitee-common.version>
         <nimbus.version>9.19</nimbus.version>
 
