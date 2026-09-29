@@ -24,7 +24,7 @@
     <parent>
         <groupId>io.gravitee</groupId>
         <artifactId>gravitee-parent</artifactId>
-        <version>19.99.1</version>
+        <version>23.5.0</version>
     </parent>
 
     <groupId>io.gravitee.identityprovider</groupId>
@@ -40,6 +40,7 @@
 
         <junit-jupiter.version>5.14.4</junit-jupiter.version>
         <assertj.version>3.27.7</assertj.version>
+        <rxjava.version>2.2.19</rxjava.version>
     </properties>
 
     <dependencyManagement>
@@ -77,6 +78,11 @@
                 <artifactId>assertj-core</artifactId>
                 <version>${assertj.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.reactivex.rxjava2</groupId>
+                <artifactId>rxjava</artifactId>
+                <version>${rxjava.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
